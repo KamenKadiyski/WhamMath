@@ -24,6 +24,13 @@
 * 🔢 **NumPy** ![NumPy](https://shields.io) — Математически изчисления
 * 🧮 **SymPy** ![SymPy](https://shields.io) — Символна математика
 
+## 🛠️ Tech Stack
+
+* 🪐 **Jupyter Notebook** <img src="https://shields.io" alt="Jupyter"> — Среда за разработка
+* 🐍 **Python** <img src="https://shields.io" alt="Python"> — Основен език
+* 🐼 **Pandas** <img src="https://shields.io" alt="Pandas"> — Анализ на данни
+* 🔢 **NumPy** <img src="https://shields.io" alt="NumPy"> — Математически изчисления
+* 🧮 **SymPy** <img src="https://shields.io" alt="SymPy"> — Символна математика
 
 
 ### 📈 Визуализация
