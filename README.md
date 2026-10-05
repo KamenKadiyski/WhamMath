@@ -13,11 +13,14 @@
 ## Tech stack
 ## 🛠️ Tech Stack
 
+## 🛠️ Tech Stack
+
 * 🪐 **Jupyter Notebook** ![Jupyter](https://shields.io) — Среда за разработка
 * 🐍 **Python** ![Python](https://shields.io) — Основен език
 * 🐼 **Pandas** ![Pandas](https://shields.io) — Анализ на данни
 * 🔢 **NumPy** ![NumPy](https://shields.io) — Математически изчисления
 * 🧮 **SymPy** ![SymPy](https://shields.io) — Символна математика
+
 
 
 
