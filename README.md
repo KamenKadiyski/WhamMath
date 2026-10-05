@@ -18,14 +18,6 @@
 ![Pandas](https://shields.io)
 ![Static Badge](https://img.shields.io/badge/Jupyter-notepad)
 
-* 🪐 **Jupyter Notebook** ![Jupyter](https://shields.io) — Среда за разработка
-* 🐍 **Python** ![Python](https://shields.io) — Основен език
-* 🐼 **Pandas** ![Pandas](https://shields.io) — Анализ на данни
-* 🔢 **NumPy** ![NumPy](https://shields.io) — Математически изчисления
-* 🧮 **SymPy** ![SymPy](https://shields.io) — Символна математика
-
-## 🛠️ Tech Stack
-
 * 🪐 **Jupyter Notebook** <img src="https://shields.io" alt="Jupyter"> — Среда за разработка
 * 🐍 **Python** <img src="https://shields.io" alt="Python"> — Основен език
 * 🐼 **Pandas** <img src="https://shields.io" alt="Pandas"> — Анализ на данни
