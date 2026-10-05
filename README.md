@@ -10,32 +10,21 @@
 
 **Note:** Проекта е изграден на базата на реално производство и данните за продуктите са реални. Използвани са и реални данни за материалите, които се ползват в реалното производство.
 
-## Tech stack
 ## 🛠️ Tech Stack
-
-## 🛠️ Tech Stack
-
-* 🪐 **Jupyter Notebook** ![Jupyter](https://shields.io) — Среда за разработка
-* 🐍 **Python** ![Python](https://shields.io) — Основен език
-* 🐼 **Pandas** ![Pandas](https://shields.io) — Анализ на данни
-* 🔢 **NumPy** ![NumPy](https://shields.io) — Математически изчисления
-* 🧮 **SymPy** ![SymPy](https://shields.io) — Символна математика
-
-
-
-
 ### 📊 Анализ на данни
 ![Jupyter Notebook](https://shields.io)
 ![Python](https://shields.io)
 ![NumPy](https://shields.io)
 ![Pandas](https://shields.io)
-## 🛠️ Tech Stack
+![Static Badge](https://img.shields.io/badge/Jupyter-notepad)
 
 * 🪐 **Jupyter Notebook** ![Jupyter](https://shields.io) — Среда за разработка
 * 🐍 **Python** ![Python](https://shields.io) — Основен език
 * 🐼 **Pandas** ![Pandas](https://shields.io) — Анализ на данни
 * 🔢 **NumPy** ![NumPy](https://shields.io) — Математически изчисления
 * 🧮 **SymPy** ![SymPy](https://shields.io) — Символна математика
+
+
 
 ### 📈 Визуализация
 ![Matplotlib](https://shields.io)
