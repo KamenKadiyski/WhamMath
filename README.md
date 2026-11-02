@@ -1,61 +1,40 @@
-# Геометрия, Диференциално и интегрално смятане, Статистика: Математиката в проиозводтсавото на пластмасови изделия
+# Geometry, Differential and Integral Calculus, Statistics: Mathematics in the Production of Plastic Products
+### Преводът на английски е с лошо качество, но се оказа нелепо изискване към проекта. В този си вид, проекта може да е доста неясен или с сгрешени термини. На български език, проект щеше да е чист от грешки, в доста по-голяма степен.
+Plastic products are all around us. At first glance, the process appears quick and simple. My previous project, [QCS - Quality Control System](https://qcs.ishistack.dev) — [GitHub project repo](https://github.com/KamenKadiyski/QCS) — focused on the accessible and visible aspects of this process.
+However, a great deal of mathematics lies behind every single product. This ranges from mold design and the mathematical relationships governing the injection of molten plastic, to cooling times and the statistical control of production processes. As a supervisor at one of the manufacturing facilities of [What More UK Ltd](https://www.whatmoreuk.com), I am required to have a deep understanding of the critical details involved in production. With the assistance of **Rob Walker (Manufacturing Director)**, **Matteo Sampaolesi (Product and Tool Designer)**, and **Lee Hugman (Quality Manager)**, I aim to illustrate aspects of the production process through the lens of mathematics. As the creator of this project, I do not claim that the information presented is exhaustive. Some of the material is used for training newly appointed "setters" (staff responsible for configuring, starting up, and maintaining the machinery). Another source is [https://www.ptonline.com](https://www.ptonline.com) — a specialized website covering techniques, practices, technologies, and other topics related to the manufacturing of plastic products.
+Several of the company's most frequently manufactured products are featured here; for three of these, data was also collected directly from the machines during the production run. The `data` folder contains images of the trend charts from the three machines from which the data was extracted.
+## Project Structure
+The project is divided into several modules:
+1. Geometry and Linear Algebra: Why calculating shrinkage is important for designing the mold for a specific product [modul1.ipynb](modul1.ipynb)
+2. Differential and Integral Calculus: Cooling and thermodynamics are critical for productivity [modul2.ipynb](modul2.ipynb)
+3. Numerical Methods: The relationship between pressure, volume, and temperature [modul3.ipynb](modul3.ipynb)
+4. Statistics and Probability, and their connection to quality control [modul4.ipynb](modul4.ipynb) [modul5.ipynb](modul5.ipynb) [modul6.ipynb](modul6.ipynb)
 
-Пластмасовите изделия са навсякъде около нас. На пръв поглед процеса иглежда бърз и лесен. В предният си проект [QCS - Quality Control System](https://qcs.ishistack.dev) - [GitHub project repo](https://github.com/KamenKadiyski/QCS) лесната и видима страна на процеса.
- Но зад всяко едно изделие има вложена много математика. От дизайна на матрица, превз математическите зависимости свързани с шрицоването на разтопената пластмаса, времето за охлаждане, до статистическият контрол на производствените процеси. Като супервайзер в една от производствените бази на [What More UK Ltd](https://www.whatmoreuk.com) трябва да са запознат до голяма степен с важни детайли свързани с производството. С помощта на **Rob Walker - Manufacturing Director**, **Matteo Sampaolesi - Product and tool designer**  и **Lee Hugman - Quality manager**,  се опитвам да предтавя детайли от производственият процес чрез математиката. Като създател на проекта, нямам претенциите, че всичко изложено е изчерпателно. Част от изложеното се ползва за обучение на новозначени setters(служители, които отговарят за настройката, пускането и подръжката на машините). Друг източник е [https://www.ptonline.com](https://www.ptonline.com) - специализиран за сайт за техники, практики, технолигии и др. в производството на пластмасови изделия.
- Представени са няколко от най-произвежданите продкти на компанията, като за три от тях са взети и данни от машините по време на производството. В папката data са качени снимките на trend таблиците на трите машини, от които са извлечени данните.
-## Структура на проекта
-Проектът е разделен на няколко модула:
-1. Геометрия и линейна алгебра: Защо изчисляването на свиването е важно за проектирането на матрицата за даден продукт [modul1.ipynb](modul1.ipynb)
-2. Диферинциално и интегрално смятане: Охлаждане и термодинамика са критично важни за продуктивността [modul2.ipynb](modul2.ipynb)
-3. Числени методи: Каква е връзката между налягане, обем и температура [modul3.ipynb](modul3.ipynb)
-4. Статистика и вероятности и връзката им с качественият контрол [modul4.ipynb](modul4.ipynb) [modul5.ipynb](modul5.ipynb) [modul6.ipynb](modul6.ipynb)
-
-**Note:** Проекта е изграден на базата на реално производство и данните за продуктите са реални. Използвани са и реални данни за материалите, които се ползват в реалното производство.
+**Note:** The project is based on an actual production environment, and the product data is real. It also utilizes real data regarding the materials used in actual production.
 
 
 ---
 
-## Кратък речник на техническите термини за машини BMB eKW Hybrid различни модели.
+## Brief Glossary of Technical Terms for BMB eKW Hybrid Machines (Various Models)
 
-За да бъде този проект напълно разбираем, ето какво означават най-важните думи от екраните на машините и компоненти, обяснени с разбираеми примери:
+To ensure this project is fully understandable, here are the definitions of the most important terms found on the machine screens and components, explained with accessible examples:
 
-### 1. Шнек (Screw)
-*   **Какво е:** Голям метален винт, разположен върте в цилиндъра на машината.
-*   **Пример от живота:** Работи точно като механизма в **домашна месомелачка**. Когато се върти, той дърпа твърдите пластмасови гранули от бункера, разтрива ги, за да се разтопят, и ги събира най-отпред в готовност за шприцване. След това се задейства като **бутало на спринцовка** и инжектира стопената пластмаса в матрицата.
+### 1. Screw
+*   **What it is:** A large metal screw located inside the machine's barrel.
+*   **Real-world example:** It functions exactly like the mechanism inside a **household meat grinder**. As it rotates, it draws solid plastic granules from the hopper, works them until they melt, and gathers the material at the front, ready for injection. It then acts like a **syringe plunger**, injecting the molten plastic into the mold.
 
-### 2. Остатъчна възглавница (Cushion position)
-*   **Какво е:** Малкото количество разтопена пластмаса (обикновено няколко милиметра), което остава пред шнека, след като той е приключил с шрицоването и пълненето на детайла.
-*   **Защо е важна:** Тя действа като **хидравличен буфер (спирачна възглавница)**. Задачата и е да поеме натиска, за да не удари металният шнек „на желязо“ в челото на цилиндъра. Ако възглавницата падне на 0 мм, детайлът ще остане кух или недолят, защото машината няма да има върху какво да натиска, за да уплътни пластмасата.
+### 2. Residual Cushion (Cushion position)
+*   **What it is:** A small amount of molten plastic (typically a few millimeters) that remains in front of the screw after the injection and mold-filling process is complete.
+*   **Why it matters:** It acts as a **hydraulic buffer (cushion)**. Its purpose is to absorb pressure, preventing the metal screw from striking the front of the barrel (metal-on-metal contact). If the cushion drops to 0 mm, the part may end up hollow or incompletely filled, as the machine would lack the material needed to apply the pressure required to compact the plastic.
 
-### 3. Въртящ момент (Torque / Maximum & Mean torque)
-*   **Какво е:** Силата, с която електромоторът завърта шнека, за да смели и разтопи пластмасовите гранули. Измерва се в Нютон-метри (Nm).
-*   **Пример от живота:** Представете си, че бъркате гъсто тесто с миксер. Ако тестото е рядко, миксерът се върти лесно (нисък въртящ момент). Ако добавите твърде много брашно, миксерът започва да се затормозява и изисква много повече сила, за да превърти (висок въртящ момент). В машината *Mean torque* е средното натоварване на мотора, а *Maximum torque* е най-голямото натоварване (напън), достигнато по време на въртенето.
+### 3. Torque (Maximum & Mean torque)
+*   **What it is:** The force with which the electric motor rotates the screw to process and melt the plastic granules. It is measured in Newton-meters (Nm).
+*   **Real-world example:** Imagine mixing thick dough with a mixer. If the dough is thin, the mixer spins easily (low torque). If you add too much flour, the mixer begins to struggle and requires much more force to keep turning (high torque). In the machine, *Mean torque* represents the average load on the motor, while *Maximum torque* is the peak load (strain) reached during rotation.
 
-### 4. Пластификация (Plasticizing time / position)
-*   **Какво е:** Процесът на взимане на твърд материал от бункера, неговото разтопяване чрез въртене на шнека и подготвянето на точната доза за следващия детайл.
-*   **Накратко:** Това е времето (в секунди) и разстоянието (в мм), за което машината „дъвче“ и подготвя следващата порция течна пластмаса.
+### 4. Plasticizing (Plasticizing time / position)
+*   **What it is:** The process of taking solid material from the hopper, melting it via the rotation of the screw, and preparing the precise dose for the next part.
+*   **In short:** This is the time (in seconds) and distance (in mm) during which the machine "chews up" and prepares the next batch of molten plastic.
 
-### 5. Налягане на превключване (Switch-over pressure)
-*   **Какво е:** Налягането в момента, в който машината спира светкавичното бързо пълнене на матрицата и преминава в режим на бавно „доутъпкване“ (задържане под налягане).
-*   **Пример от живота:** Също като да карате кола бързо и точно преди светофара да пуснете педала на газта и да натиснете плавно спирачката. Ако превключването стане твърде рано – детайлът остава недолят. Ако стане твърде късно – пластмасата ще прелее от матрицата и ще направи "мустаци" (flash / flashing).
-
-### 6. Насрещно налягане (Backpressure)
-*   **Какво е:** Натискът, който машината оказва отпред срещу шнека, докато той се върти и се опитва да се върне назад, за да събере материал.
-*   **Защо е важно:** Насрещното налягане притиска материала, за да изгони въздуха от гранулите. То гарантира, че в течната пластмаса няма да има въздушни мехурчета, които после да се появят като дупки (шупли) в готовия детайл.
-
-
-
-##  Tech Stack
-### Анализ на данни
-[Jupyter Notebook](https://jupyter.org)
-[Python](https://www.python.org)
-[NumPy](https://numpy.org)
-[Pandas](https://pandas.pydata.org)
-[SymPy](https://www.sympy.org/en/index.html)
-
-
-
-
-###  Визуализация
-[Matplotlib](https://matplotlib.org)
-[Seaborn](https://seaborn.pydata.org)
+### 5. Switch-over pressure
+*   **What it is:** The pressure at the exact moment the machine stops the rapid filling of the mold and shifts into a slow "packing" mode (holding under pressure).
+*   **Real-life example:** It is like driving a car fast, then—just before a traffic light—releasing the gas pedal and gently applying the brakes. If the switch-over happens too early, the part will be underfilled. If it happens too late, the plastic...
