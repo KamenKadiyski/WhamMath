@@ -47,15 +47,15 @@
 
 ##  Tech Stack
 ### Анализ на данни
-![Jupyter Notebook](https://jupyter.org)
-![Python](https://www.python.org)
-![NumPy](https://numpy.org)
-![Pandas](https://pandas.pydata.org)
-![SymPy](https://www.sympy.org/en/index.html)
+[Jupyter Notebook](https://jupyter.org)
+[Python](https://www.python.org)
+[NumPy](https://numpy.org)
+[Pandas](https://pandas.pydata.org)
+[SymPy](https://www.sympy.org/en/index.html)
 
 
 
 
 ###  Визуализация
-![Matplotlib](https://matplotlib.org)
-![Seaborn](https://seaborn.pydata.org)
+[Matplotlib](https://matplotlib.org)
+[Seaborn](https://seaborn.pydata.org)
